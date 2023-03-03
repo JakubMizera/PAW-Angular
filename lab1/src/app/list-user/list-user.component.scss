@@ -1,0 +1,9 @@
+p {
+  font-size: 30px;
+}
+
+// zmiana opakowania komponentu
+:host {
+  display: block;
+  background-color: red;
+}
