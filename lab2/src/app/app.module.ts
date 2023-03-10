@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListUserComponent } from './list-user/list-user.component';
+import { SmallChartComponent } from './small-chart/small-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListUserComponent,
+    SmallChartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
