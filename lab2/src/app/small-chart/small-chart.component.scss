@@ -1,9 +1,12 @@
+:host {
+  padding: 10px;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
 
   .circleWrapper {
-    border: 1px solid green;
     border-radius: 50%;
     width: 45px;
     aspect-ratio: 1;

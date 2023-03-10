@@ -1,10 +1,10 @@
 <div class="container">
   <div class="wrapper">
-    <div class="circleWrapper"><img class="icon" src="./../../assets/sack-dollar-solid.svg"/></div>
+    <div class="circleWrapper" [ngStyle]="{'border': '2px solid ' + color}"><img class="icon" src={{image}} /></div>
     <div class="moneyWrapper">
-      <h1 class="moneyValue">{{value}}</h1>
-      <h2 class="title">total revenue</h2>
+      <h1 class="moneyValue" [ngStyle]='{color: color}'>{{revenue}}</h1>
+      <h2 class="title">{{title}}</h2>
     </div>
   </div>
-  <button><img class="options" src="./../../assets/ellipsis-solid.svg"/></button>
+  <button><img class="options" src="./../../assets/ellipsis-solid.svg" /></button>
 </div>

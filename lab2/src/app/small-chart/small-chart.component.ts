@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-chart',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-chart.component.scss', './../../container.scss']
 })
 export class SmallChartComponent {
-protected value = '$50,000';
+  @Input() revenue!: string;
+  @Input() title!: string;
+  @Input() color!:string;
+  @Input() image!: string;
 }
