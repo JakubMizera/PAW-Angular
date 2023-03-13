@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="infoWrapper">
+        <h1 class="title">{{title}}</h1>
+        <h2 class="value">{{value}}</h2>
+        <h3 class="percentages" [ngStyle]="{color: arrow}">
+            <fa-icon [icon]="isUp"></fa-icon>
+            {{procentageValue}}
+        </h3>
+    </div>
+    <div class="infoGraphics">
+        <fa-icon [icon]="faChartSimple" [ngStyle]='{color: color}'></fa-icon>
+    </div>
+</div>

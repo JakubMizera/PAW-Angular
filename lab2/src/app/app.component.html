@@ -1,6 +1,12 @@
-<div class="smallChartWrapper">
+<div class="chartWrapper">
     <app-small-chart [revenue]="revenue1" [title]="revenueTitle1" [color]="green" [image]="image1">
     </app-small-chart>
     <app-small-chart [revenue]="revenue2" [title]="revenueTitle2" [color]="purple" [image]="image2">
     </app-small-chart>
+</div>
+<div class="chartWrapper">
+    <app-medium-chart [color]="green" [title]="mediumTitle1" [value]="value1" [arrow]="red"
+        [procentageValue]="procentageValue" [isUp]="arrowDown"></app-medium-chart>
+    <app-medium-chart [color]="purple" [title]="mediumTitle2" [value]="value2" [arrow]="green"
+        [procentageValue]="procentageValue" [isUp]="arrowUp"></app-medium-chart>
 </div>
