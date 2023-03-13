@@ -1,10 +1,14 @@
 <div class="container">
   <div class="wrapper">
-    <div class="circleWrapper" [ngStyle]="{'border': '2px solid ' + color}"><img class="icon" src={{image}} /></div>
+    <div class="circleWrapper" [ngStyle]="{'border': '2px solid ' + color}">
+      <fa-icon class="icon" [icon]="image" [ngStyle]="{color: color}"></fa-icon>
+    </div>
     <div class="moneyWrapper">
       <h1 class="moneyValue" [ngStyle]='{color: color}'>{{revenue}}</h1>
       <h2 class="title">{{title}}</h2>
     </div>
   </div>
-  <button><img class="options" src="./../../assets/ellipsis-solid.svg" /></button>
+  <button>
+    <fa-icon class="options" [icon]="options"></fa-icon>
+  </button>
 </div>

@@ -13,11 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .icon {
-      width: 20px;
+      font-size: 1.2rem;
     }
   }
-
 
   .moneyWrapper {
     padding: 0 10px;
@@ -38,8 +38,7 @@
 }
 
 .options {
-  width: 20px;
-  display: block;
+  font-size: 1.5rem;
   cursor: pointer;
-  filter: opacity(50%);
+  color: gray;
 }
