@@ -8,13 +8,15 @@ import { SmallChartComponent } from './small-chart/small-chart.component';
 import { MediumChartComponent } from './medium-chart/medium-chart.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BeerListComponent } from './beer-list/beer-list.component';
+import { BeerDetailsComponent } from './beer-details/beer-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SmallChartComponent,
     MediumChartComponent,
-    BeerListComponent
+    BeerListComponent,
+    BeerDetailsComponent
   ],
   imports: [
     BrowserModule,

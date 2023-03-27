@@ -1,2 +1,9 @@
 <p>beer-list works!</p>
-{{myBeer | json}}
+<ul>
+    <li *ngFor="let beer of beers">
+        <span>{{beer.id}}</span>
+        <h2>{{beer.name}}</h2>
+        <button (click)="isOn = !isOn">{{ isOn ? 'Hide beer details' : 'Show beer details' }}</button>
+        <app-beer-details *ngIf="isOn" [beerDetails]="beer"></app-beer-details>
+    </li>
+</ul>
