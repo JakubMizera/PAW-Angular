@@ -59,4 +59,5 @@ export type BeerInfo = {
     food_pairing: string[];
     brewers_tips: string;
     contributed_by: string;
+    showDetails: boolean;
 }

@@ -9,13 +9,11 @@ import { BeerInfo } from '../types/types';
 })
 export class BeerListComponent implements OnInit {
   beers?: BeerInfo[];
-  isOn = false;
   constructor(private myDataService: BeerService) { }
 
   ngOnInit(): void {
     this.myDataService.getBeer().subscribe((response) => {
       this.beers = response;
-      console.log(response);
     });
   }
 }
