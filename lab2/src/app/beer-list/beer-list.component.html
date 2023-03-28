@@ -1,8 +1,6 @@
 <ul>
-    <li *ngFor="let beer of beers">
-        <span>{{beer.id}}</span>
-        <h2>{{beer.name}}</h2>
-        <button (click)="beer.showDetails = !beer.showDetails">{{ beer.showDetails ? 'Hide beer details' : 'Show beer details' }}</button>
+    <li *ngFor="let beer of beers" (click)="beer.showDetails = !beer.showDetails">
+        <h2 >{{beer.name}}</h2>
         <app-beer-details *ngIf="beer.showDetails" [beerDetails]="beer"></app-beer-details>
     </li>
 </ul>
