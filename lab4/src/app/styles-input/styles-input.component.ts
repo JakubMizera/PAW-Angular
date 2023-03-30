@@ -7,8 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./styles-input.component.scss']
 })
 export class StylesInputComponent {
-  onSubmit(f: NgForm) {
-    console.log(f.value);
-    
-  }
+  userInputColor?: string;
+  userInputBgColor?: string;
+  userInputBordedColor?: string;
+  userInputFontSize?: string;
 }

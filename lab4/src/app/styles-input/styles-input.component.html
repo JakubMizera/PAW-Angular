@@ -1,9 +1,23 @@
-<div>
-    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-        <input name="first" ngModel required #first="ngModel">
-        <button>Submit</button>
-      </form>
-  
-      <p>First name value: {{ first.value }}</p>
+<div class="inputs">
+  <label for="textColor">Wpisz kolor tekstu</label>
+  <input type="text" [(ngModel)]="userInputColor" id="textColor">
+  <label for="bgColor">Wpisz kolor tła</label>
+  <input type="text" [(ngModel)]="userInputBgColor" id="bgColor">
+  <label for="borderColor">Wpisz kolor obramowania</label>
+  <input type="text" [(ngModel)]="userInputBordedColor" id="borderColor">
+  <label for="fontSize">Wpisz wielkość tekstu w pixelach</label>
+  <input type="text" [(ngModel)]="userInputFontSize" id="fontSize">
+  <h1>color: {{userInputColor}};</h1>
+  <h1>background-color: {{userInputBgColor}};</h1>
+  <h1>border-color: {{userInputBordedColor}};</h1>
+  <h1>font-size: {{userInputFontSize}}px;</h1>
+</div>
 
+<div class="outputs">
+  <button [style.color]="userInputColor" [style.backgroundColor]="userInputBgColor"
+    [style.borderColor]="userInputBordedColor" [style.fontSize]="userInputFontSize + 'px'">Click this button</button>
+  <input [style.color]="userInputColor" [style.backgroundColor]="userInputBgColor"
+    [style.borderColor]="userInputBordedColor" [style.fontSize]="userInputFontSize + 'px'" placeholder="type here..." />
+  <div [style.color]="userInputColor" [style.backgroundColor]="userInputBgColor"
+    [style.borderColor]="userInputBordedColor" [style.fontSize]="userInputFontSize + 'px'">I'm a div</div>
 </div>
