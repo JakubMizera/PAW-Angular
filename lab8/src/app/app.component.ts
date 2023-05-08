@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lab8';
+  onSearch(searchValue: string) {
+    console.log('Wyszukaj: ' + searchValue);
+    // dodaj kod wyszukiwania
+  }
 }
